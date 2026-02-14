@@ -45,6 +45,28 @@ Values are shown as **Max Free Tier Limits**.
 
 ---
 
+## Groq — Free Tier Models
+
+| Model | Requests per Minute | Requests per Day | Tokens per Minute | Tokens per Day | Actions | Reason for Rank |
+|-------|-------------------|----------------|-----------------|---------------|---------|----------------|
+| **openai/gpt-oss-120b** | 30 | 1K | 8K | 200K |  | **120B parameters – largest, highly capable for reasoning, generation, and context understanding** |
+| **qwen/qwen3-32b** | 60 | 1K | 6K | 500K |  | **32B parameters – very strong LLM, excellent reasoning and comprehension** |
+| **llama-3.3-70b-versatile** | 30 | 1K | 12K | 100K |  | **70B parameters – versatile LLaMA model, strong reasoning and general-purpose tasks** |
+| **meta-llama/llama-4-maverick-17b-128e-instruct** | 30 | 1K | 6K | 500K |  | **17B parameters, 128-epoch instruction-tuned, strong reasoning and instruction following** |
+| **meta-llama/llama-4-scout-17b-16e-instruct** | 30 | 1K | 30K | 500K |  | **17B parameters, instruction-tuned, optimized for complex instructions** |
+| llama-3.1-8b-instant | 30 | 14.4K | 6K | 500K |  | 8B parameters, optimized for instant responses, strong general reasoning but smaller than top-tier models |
+| allam-2-7b | 30 | 7K | 6K | 500K |  | 7B parameters, capable general-purpose model, smaller size limits reasoning depth |
+| meta-llama/llama-guard-4-12b | 30 | 14.4K | 15K | 500K |  | 12B parameters, focused on guard/safety tasks; trades some general reasoning for safety functions |
+| moonshotai/kimi-k2-instruct | 60 | 1K | 10K | 300K |  | Instruction-tuned, moderate size, decent for guided tasks but smaller than LLaMA and GPT models |
+| moonshotai/kimi-k2-instruct-0905 | 60 | 1K | 10K | 300K |  | Same as above with minor updates; still moderate capability |
+| openai/gpt-oss-20b | 30 | 1K | 8K | 200K |  | 20B parameters, capable but less flexible than top 120B or LLaMA 70B models |
+| openai/gpt-oss-safeguard-20b | 30 | 1K | 8K | 200K |  | 20B parameters, tuned for safety; slightly less general reasoning capability |
+| meta-llama/llama-prompt-guard-2-22m | 30 | 14.4K | 15K | 500K |  | Very small, specialized for prompt control/guarding; not strong for general reasoning |
+| meta-llama/llama-prompt-guard-2-86m | 30 | 14.4K | 15K | 500K |  | Small, specialized for guard/prompt moderation; limited general intelligence |
+| groq/compound | 30 | 250 | 70K | No limit |  | Hardware-optimized, throughput-focused model; smaller reasoning capacity |
+| groq/compound-mini | 30 | 250 | 70K | No limit |  | Mini version of Groq compound, optimized for speed, not reasoning |
+
+
 ## Models NOT free tier (require billing / trusted project)
 
 These showed **limit = 0** in your panel:
