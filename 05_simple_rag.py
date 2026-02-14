@@ -58,7 +58,7 @@ chunks = text_splitter.split_documents(raw_documents)
 print(f"📄 Split {len(raw_documents)} documents into {len(chunks)} chunks\n")
 
 # ─── Step 3: Create embeddings and vector store ─────────────
-embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
+embeddings = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
 vector_store = FAISS.from_documents(chunks, embeddings)
 
 # ─── Step 4: Create a retriever ─────────────────────────────
