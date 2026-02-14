@@ -23,7 +23,7 @@ prompt = ChatPromptTemplate.from_messages([
 ])
 
 # 2. Create the LLM
-llm = ChatGoogleGenerativeAI(model="gemma-3-27b-it", temperature=0.7)
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.7)
 
 # 3. Create a chain by piping the prompt into the LLM
 chain = prompt | llm  # This is LCEL (LangChain Expression Language)!

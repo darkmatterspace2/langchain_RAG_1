@@ -16,6 +16,63 @@ Format: **limit = current / maximum**
 
 ---
 
+
+Below is a **clean Markdown table of the models that actually have free-tier quota in your limits panel** (i.e., non-zero maximum values).
+
+Values are shown as **Max Free Tier Limits**.
+
+---
+
+## Google AI Studio — Free Tier Models
+
+| Model                                | Category       | RPM       | TPM       | RPD       |
+| ------------------------------------ | -------------- | --------- | --------- | --------- |
+| gemma-3-1b-it                        | LLM            | 30        | 15,000    | 14,400    |
+| gemma-3-2b-it                        | LLM            | 30        | 15,000    | 14,400    |
+| gemma-3-4b-it                        | LLM            | 30        | 15,000    | 14,400    |
+| gemma-3-12b-it                       | LLM            | 30        | 15,000    | 14,400    |
+| gemma-3-27b-it                       | LLM            | 30        | 15,000    | 14,400    |
+| gemini-2.5-flash                     | Text           | 5         | 250,000   | 20        |
+| gemini-2.5-flash-lite                | Text           | 10        | 250,000   | 20        |
+| gemini-3-flash                       | Text           | 5         | 250,000   | 20        |
+| gemini-embedding-1                   | Embeddings     | 100       | 30,000    | 1,000     |
+| gemini-2.5-flash-tts                 | Audio          | 3         | 10,000    | 10        |
+| gemini-2.5-flash-native-audio-dialog | Realtime Audio | Unlimited | 1,000,000 | Unlimited |
+| imagen-4-generate                    | Image          | —         | —         | 25        |
+| imagen-4-fast-generate               | Image          | —         | —         | 25        |
+| imagen-4-ultra-generate              | Image          | —         | —         | 25        |
+| gemini-robotics-er-1.5-preview       | Experimental   | 10        | 250,000   | 20        |
+
+---
+
+## Models NOT free tier (require billing / trusted project)
+
+These showed **limit = 0** in your panel:
+
+* gemini-2.5-pro
+* gemini-3-pro
+* deep-research-pro-preview
+* computer-use-preview
+* gemini-2-flash family experimental pro variants
+* pro TTS variants
+
+---
+
+## Practical takeaway
+
+For a full free RAG stack:
+
+| Component      | Best Free Model                      |
+| -------------- | ------------------------------------ |
+| LLM            | gemini-2.5-flash                     |
+| Cheap fallback | gemma-3-1b-it                        |
+| Embeddings     | gemini-embedding-1                   |
+| Voice agent    | gemini-2.5-flash-native-audio-dialog |
+
+This combination maximizes daily usage before hitting limits.
+
+
+
 ## Google AI Studio Rate Limits
 
 | Model                                | Category     | RPM           | TPM           | RPD           |

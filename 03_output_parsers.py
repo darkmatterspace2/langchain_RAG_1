@@ -17,7 +17,7 @@ from langchain_core.output_parsers import StrOutputParser, JsonOutputParser
 
 load_dotenv()
 
-llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0)
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0)
 
 # ─── Example 1: StrOutputParser ──────────────────────────────
 # Returns just the text content (strips away message metadata)

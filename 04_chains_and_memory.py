@@ -17,7 +17,7 @@ from langchain_core.messages import HumanMessage, AIMessage
 
 load_dotenv()
 
-llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.7)
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.7)
 
 # 1. Create a prompt that includes a placeholder for chat history
 prompt = ChatPromptTemplate.from_messages([

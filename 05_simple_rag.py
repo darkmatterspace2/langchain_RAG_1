@@ -58,7 +58,7 @@ chunks = text_splitter.split_documents(raw_documents)
 print(f"📄 Split {len(raw_documents)} documents into {len(chunks)} chunks\n")
 
 # ─── Step 3: Create embeddings and vector store ─────────────
-embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
 vector_store = FAISS.from_documents(chunks, embeddings)
 
 # ─── Step 4: Create a retriever ─────────────────────────────
@@ -68,7 +68,7 @@ retriever = vector_store.as_retriever(
 )
 
 # ─── Step 5: Build the RAG chain ────────────────────────────
-llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0)
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0)
 
 rag_prompt = ChatPromptTemplate.from_messages([
     ("system",
