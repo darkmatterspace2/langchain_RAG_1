@@ -2,7 +2,7 @@ Python is a high-level, general-purpose programming language. Its design philoso
 
 Python was conceived in the late 1980s by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands. Its implementation began in December 1989. Van Rossum shouldered sole responsibility for the project as the lead developer until 12 July 2018, when he announced his permanent vacation from his responsibilities as Python's chief architect.
 
-Python consistently ranks as one of the most popular programming languages. It is used for web development, data science, artificial intelligence, machine learning, automation, scripting, and more. Major companies like Google, Netflix, Instagram, and Spotify use Python extensively.
+Python consistently ranks as one of the most popular programming languages. It is used for web development, data scienmakece, artificial intelligence, machine learning, automation, scripting, and more. Major companies like Google, Netflix, Instagram, and Spotify use Python extensively.
 
 Python's standard library is very extensive, offering a wide range of facilities. The library contains built-in modules written in C that provide access to system functionality and modules written in Python that provide standardized solutions for many problems that occur in everyday programming.
 
